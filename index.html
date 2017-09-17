@@ -1,1 +1,23 @@
-Fcuk 0ff!
+<html>
+<head>
+<link href="test1.css" type="text/css" rel="stylesheet" id="link1" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	function change()
+	{
+		alert($("#link1").attr("href"));
+		$("#link1").attr("href", "test2.css");
+		alert($("#link1").attr("href"));
+	}
+</script>
+</head>
+<body class="test">
+
+<input type="button" value="Change" id="button1" onclick="change();" />
+
+</body>
+</html>
+
+
+
